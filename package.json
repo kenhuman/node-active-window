@@ -12,7 +12,7 @@
     "compile": "node-gyp build",
     "rebuild": "node-gyp rebuild",
     "build": "pnpm run configure && pnpm run compile && tsc",
-    "install": "pnpm run build",
+    "postinstall": "pnpm run build",
     "clean": "rm -rf build dist"
   },
   "keywords": [
