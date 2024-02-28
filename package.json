@@ -1,0 +1,27 @@
+{
+  "name": "node-active-window",
+  "version": "1.0.0",
+  "description": "package to get title of foreground window and check if window has changed",
+  "author": {
+    "name": "Ken Human",
+    "email": "ken@kenhuman.com"
+  },
+  "main": "dist/node-active-window.js",
+  "scripts": {
+    "configure": "node-gyp configure",
+    "compile": "node-gyp build",
+    "rebuild": "node-gyp rebuild",
+    "build": "pnpm run configure && pnpm run compile && tsc",
+    "clean": "rm -rf build dist"
+  },
+  "keywords": [
+    "windows"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "node-addon-api": "^7.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
