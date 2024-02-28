@@ -15,6 +15,7 @@
     "postinstall": "pnpm run build",
     "clean": "rm -rf build dist"
   },
+  "types": "node-active-window.d.ts",
   "keywords": [
     "windows"
   ],
